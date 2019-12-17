@@ -312,3 +312,7 @@ input[type="radio"] {
 .searches .span2 {
     display: none;
 }
+
+.modal-content {
+    width: 350px!important;
+}
