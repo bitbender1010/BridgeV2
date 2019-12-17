@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- TODO: ----------ADD TAB NAV ICON HERE ------------------->
+    <link rel="shortcut icon" href="exampleImage.ico">
+    <!-- ---------------------------------------------------- -->
+    <link rel="stylesheet" href="./sign_in.css">
+    <title>sign in</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">
+            <!-- TODO: put the brand logo image here and clear the comment -->
+           <img src="" alt="brand-logo"><span>Bridge</span>
+        </div>
+
+        <div class="home__nav">
+            <!-- TODO: link this to the home page -->
+            <a href="">Home</a>
+        </div>
+    </div>
+
+    <div class="signin__container">
+        <div class="signin__form__div">
+            <div class="header__cancel__modal"><p>Login to continue</p></div>
+            <div class="form">
+                <form id="sign__form">
+                    <label for="signin__email">
+                        <p class="email__label">Email</p>
+                        <input type="email" name="email" id="signin__email__input" required>
+                    </label>
+                    <label for="signin__password">
+                        <p class="password__label">Password</p>
+                        <input type="password" name="password" id="signin__password__input" required>
+                    </label> <br>
+                    <button id="signin__btn">Log in</button>
+                </form>
+                <div class="auth">
+                    <span class="firstline__span"></span>
+                    <p>or sign in with</p>
+                    <span class="secondline__span"></span>
+                    <!-- TODO: ADD google icon image to the button -->
+                    <button id="google-auth">Google</button>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Dont have an account? <span id="sign__up"><a href="./signup.html">sign up</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+
+<script>
+     // Your web app's Firebase configuration
+    
+    //Add missing config object here
+    var firebaseConfig = {     
+        apiKey: "AIzaSyCyxzgHnahEen0ZdbkDZxRan_3rI-aofNA",     
+        authDomain: "bridge-proj.firebaseapp.com",     
+        databaseURL: "https://bridge-proj.firebaseio.com",     
+        projectId: "bridge-proj",     
+        storageBucket: "bridge-proj.appspot.com",     
+        messagingSenderId: "137211896657",     
+        appId: "1:137211896657:web:7eb6442fd17d869b20a970"
+    };
+    
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+//   Make auth and firebase reference;
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+
+</script>
+<script src="scripts/auth.js"></script>
+</html>

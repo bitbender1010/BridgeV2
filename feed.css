@@ -1,0 +1,217 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav__brand{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 13px;
+    padding-right: 23px;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-around;
+    height: 51px;
+    align-items: center;
+    font-size: 23px;
+    color: #1D4354;
+    background-color: #F68A1E;
+}
+.dashboard__item:hover{
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.dashboard__item:hover>svg{
+    fill: white;
+    transition: 0.5s ease;
+}
+.dashboard__description{
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 0px 5px;
+}
+.user__details{
+    font-size: 13px;
+}
+.add__post{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #f68a1e;
+}
+.active{
+    color: white;
+    font-weight: bold;
+}
+.active svg{
+    fill: white;
+}
+.dropdown__selector{
+    background-color: #9E9E9E;
+    position: relative;
+    display: flex;
+    height: 39px;
+    align-items: center;
+}
+
+.dropdown__div{
+    display: none;
+    position: absolute;
+    top: 37px;
+    z-index: 100;
+    transition: 0.5s ease;
+    opacity: 0;
+    background-color: white;
+    height: 500px;
+    border: 1px solid #555555;
+    width: 280px;
+    box-shadow: 2px 4px 12px 0px #555555;
+    left: 21px;
+}
+.selector{
+    cursor: pointer;
+    width: 90px;
+    margin-left: 13px;
+}
+.selector__icon{
+    transition: .5s ease;
+}
+
+.triangle-up {
+	width: 0;
+    height: 0;
+    position: absolute;
+    top: -16px;
+    right: 144px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 15px solid #555;
+}
+.close__modal{
+    float: right;
+    border: 1px solid;
+    width: 19px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 19px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.feed{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    height: 358px;
+}
+.feed__card{
+    display: flex;
+    background-color: #9e9e9e;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed__card p{
+    margin: 2px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    margin-left: 7px;
+        margin-right: 7px;
+    margin-left: 7px;
+    border-radius: 50px;
+}
+.description{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 2px;
+}
+.open__status:after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    background-color: green;
+}
+
+.open__status, .assigned__status{
+    position: relative;
+    width: 50px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid grey;
+}
+.assigned__status:after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    background-color: #FF9800;
+}
+.closed__status{
+    position: relative;
+    width: 50px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-align: center;
+    padding-bottom: 3px;
+}
+.closed__status:after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    background-color: #4a4742;
+}
+.offers{
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .dashboard__description {
+        display: none;
+    }
+    .feed{
+        width: 96%;
+    }
+}
+
+.dashboard-icon {
+    width: 29px;
+    height: 25px;
+}
+
+.dashboard-icon:hover {
+    color: #1d4354;
+}

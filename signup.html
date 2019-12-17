@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- TODO: ----------ADD TAB NAV ICON HERE ------------------->
+    <link rel="shortcut icon" href="exampleImage.ico">
+    <!-- ---------------------------------------------------- -->
+    <link rel="stylesheet" href="./sign_in.css">
+    <link rel="stylesheet" href="./signup.css">
+    <title>sign in</title>
+</head>
+
+<body>
+    <div class="signin__container top">
+        <div class="signin__form__div">
+            <div class="header__cancel__modal">
+                <p>Sign up to continue</p>
+            </div>
+            <div class="form">
+                <form id="sign__form">
+                    <label for="signin__email">
+                        <p class="email__label">Email</p>
+                        <input type="email" name="email" id="signup__email__input" required>
+                    </label>
+                    <label for="signin__password">
+                        <p class="password__label">Password</p>
+                        <input type="password" name="password" id="signup__password__input" required>
+                    </label> <br>
+                    <div class="agreement__div">
+                        <input type="checkbox" name="agree" id="agree" required> <span>By signing up, I agree to all Bridge's <span
+                            class="sign-orange-color">terms and conditions,</span> and <span class="sign-orange-color">community
+                            guildiance</span>
+                        </span>
+                    </div>
+                    <button id="signup__btn">Sign up</button>
+                </form>
+                <!--
+                <div class="auth">
+                    <span class="firstline__span"></span>
+                    <p>or sign in with</p>
+                    <span class="secondline__span"></span>
+                    !-- TODO: ADD google icon image to the button --
+                    <button id="google-auth">Google</button>
+                </div> -->
+            </div>
+            <div class="bottom">
+                <p>Aready have an account? <span id="sign__in"><a href="./signin.html">sign in</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

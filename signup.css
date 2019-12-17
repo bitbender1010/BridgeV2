@@ -1,0 +1,45 @@
+
+.agreement__div{
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#sign__btn{
+    margin-top: 5px !important;
+}
+#sign__form {
+    height: 255px !important;
+}
+#signup__email__input,
+#signup__password__input {
+    height: 22px;
+    width: 292px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    text-indent: 6px;
+    font-size: 14px;
+}
+
+#signup__btn{
+    width: 269px;
+    height: 37px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #F68A1E;
+}
+
+#sign__in{
+    float: right;
+    margin-right: 2px;
+    cursor: pointer;
+}
+#sign__in a{
+    color: #F68A1E;
+    text-decoration: none;
+}
+
+.top {
+    margin-top: 5%;
+}

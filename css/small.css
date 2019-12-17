@@ -1,0 +1,27 @@
+.modal-content {
+    width: 250px;
+}
+
+.pop-cover {
+    width: 150px!important;
+    height: 100px!important;
+    margin: 10vh auto;
+    margin-bottom: 0px;
+}
+
+.popup-img {
+    width: 150px!important;
+    height: 120px!important;
+}
+.popup-main {
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,314 @@
+
+
+/*.right:nth-of-type(1),*/ .right:nth-of-type(2) {
+    display: none;
+}
+
+/*STYLING HERO TEXT*/
+.main-text {
+    font-size: 9.5vw;
+    width: 100%;
+    font-weight: bolder;
+    /*line-height: 55px;*/
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+/*SUB-TEXT*/
+.sub-text {
+    font-size: 5vw;
+    margin: 0px auto;
+    width: 98%;
+    display: none;
+}
+ 
+/*center text*/
+.main-text, .sub-text {
+    text-align: center;
+}
+
+.sub-text {
+    background: white;
+}
+
+/*CTA*/
+.CTA {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+/*center OR*/
+.CTA .or {
+    display: block;
+    text-align: center;
+}
+
+
+.post, .render {
+    align-self: center;
+}
+
+.or {
+    margin: 5px 0px;
+    color: white;
+}
+
+/*how briidge works*/
+.how {
+    font-size: 7vw;
+    padding-top: 10px;
+}
+
+.how-details {
+    font-size: 5vw;
+    width: 90%;
+}
+
+/*video*/
+.videoscreen {
+    width: 80%;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.videoscreen .video {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+/*hide real cover
+.real-cover {
+    display: none;
+} */
+
+.herobar {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+/*EXPOLRE*/
+.explore-main {
+    font-size: 8vw;
+}
+
+.explore-icons {
+    display: grid;
+    justify-content: space-around;
+    margin: 0px 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.explore-icons > div {
+    margin-top: 50px;
+}
+
+/* see all categories */
+.explore-side {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Earn button*/
+
+.boss-cover button {
+    align-self: center;
+    font-size: 18px;
+    width: 150px;
+}
+
+.boss-cover {
+    padding: 20px 5%;
+    background: white!important;
+}
+
+.boss {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.real-task {
+    font-size: 8vw;
+}
+
+/*hide 2nd testimonial*/
+.float-r {
+    display: none;
+}
+
+.testimonials {
+    margin: 0px 5%;
+}
+
+.person-id {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin: 10px;
+}
+
+/*Footer*/
+footer {
+    font-size: 15px;
+    color: gray;
+}
+
+/*remove contact img */
+.contact-base div {
+    display: none;
+}
+
+.contact-form {
+min-width: 80%;
+}
+
+.name, .email {
+    width: 80%;
+}
+
+textarea {
+    height: 150px;
+    width: 90%;
+}
+
+/*Responsive popup */
+
+.modal-content {
+    margin: 0px 20px;
+    height: 90%;
+}
+
+/*
+.popup-img {
+    width: 200px;
+    margin: 0px auto;
+    height: 150px;
+}*/
+
+.divi {
+    width: 90%;
+}
+
+/*modal popup responsive*/
+.pop-main {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.pop-sub {
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+.next-cover {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.next, #next-one {
+    background: #ff9b05;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+.popup-main {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+/*plus*/
+.plus {
+    font-size: 30px;
+    font-weight: lighter;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: -10px 00px;
+    background: none;
+    outline: none;
+    border: none;
+    transform: rotate(45deg);
+    padding: 20px;
+    z-index: 1000000;
+}
+
+.task-Q {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.task-D {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+/*box input*/
+.box-input input {
+    border: 2px solid #D1D1D1;
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;
+    border-radius: 20px;
+    outline: none;
+}
+
+.next-id {
+    width: 200px;
+    height: 50px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.main-loc {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+}
+
+.searches {
+    background: rgb(255, 255, 255);
+    padding: 20px 20px;
+    font-size: 15px;
+    color: gray;
+}
+
+.searches .span1 {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.searches .span2 {
+    display: none;
+}
