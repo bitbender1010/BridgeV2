@@ -24,20 +24,23 @@ window.addEventListener('load', ()=>{
     const feedData  = JSON.parse(feedFromDb);
     const div = document.createElement('div');
     div.classList.add('feed__card')
-    div.innerHTML = `
-    <div class="profile">
-                <img src="${feedData.img}" alt="username">
-                <div class="user__details">
-                    <p class="description">${feedData.taskTitle}</p>
-                    <p><i class="fas fa-globe"></i> <span class="status">Remote</span></p>
-                    <p class="date"><i class="far fa-calendar-alt"></i> <span>${feedData.dateTime}</span> </p>
+    console.log(feedData)
+    feedData.forEach(e => {
+        div.innerHTML += `
+        <div class="profile">
+                    <img src="${e.img}" alt="username">
+                    <div class="user__details">
+                        <p class="description">${e.taskTitle}</p>
+                        <p><i class="fas fa-globe"></i> <span class="status">Remote</span></p>
+                        <p class="date"><i class="far fa-calendar-alt"></i> <span>${e.dateTime}</span> </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="status">
-                <p class="open__status">open</p>
-                <p class="offers">${feedData.priceValue} Offers</p>
-            </div>
-    `
+    
+                <div class="status">
+                    <p class="open__status">open</p>
+                    <p class="offers">${e.priceValue} naira</p>
+                </div>
+        `
+    });
     document.querySelector('.feed').appendChild(div);
 })

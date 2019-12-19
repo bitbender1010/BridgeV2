@@ -1,3 +1,5 @@
+
+
 document.querySelector('.submit-data').addEventListener('click', ()=>{
      const priceValue = document.getElementById('price__value').value;
      const online = document.getElementById('online').value
@@ -6,12 +8,13 @@ document.querySelector('.submit-data').addEventListener('click', ()=>{
     const address = document.getElementById('address').value;
     const details =  document.getElementById('details').value
     const taskTitle = document.getElementById('task__title').value;
-
-    if(priceValue === '' && dateTime === '' && address === '' && details === '' && taskTitle === ''){
+    
+    if(priceValue === '' || dateTime === '' || address === '' || details === '' || taskTitle === ''){
     
     }else{
+    
         const feed = {
-            img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80',
+            img: './images/user.png',
             priceValue,
             status: online ? online : offline,
             dateTime,
@@ -19,7 +22,12 @@ document.querySelector('.submit-data').addEventListener('click', ()=>{
             details,
             taskTitle
         }
-        localStorage.setItem('feed-data', JSON.stringify(feed));
-        window.location.href = './feed.html'
+        if(JSON.stringify(localStorage.getItem('feed-data')) == null){
+            feeds = []
+        }else{
+            feeds.push(feed);
+            localStorage.setItem('feed-data', JSON.stringify(feeds));
+            window.location.href = './feed.html';
+        }
     }
 })
