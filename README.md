@@ -16,6 +16,7 @@ Bridge is an online marketplace for outsourcing offline and remote tasks.
     ├── api                 # node api
     ├── UI                  # user interface files
     ├── frontend            # connection between api and ui
+    ├── server              # node server  
     └── README.md 
 
 
