@@ -316,3 +316,7 @@ input[type="radio"] {
 .modal-content {
     width: 350px!important;
 }
+
+.person-cover {
+    width: 100%;
+}

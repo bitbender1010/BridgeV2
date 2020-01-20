@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin: 20% auto;
+}
+
+.error {
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.error-msg {
+    font-size: 20px;
+}

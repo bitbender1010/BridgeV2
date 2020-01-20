@@ -1,3 +1,7 @@
+/* body {
+    background: red!important;
+} */
+
 .main-text {
     font-size: calc(10px + 200%);
     color: white;
@@ -37,4 +41,22 @@
 
 .boss-cover {
     padding: 20px 5%;
+}
+
+.testimonials {
+    display: flex;
+    margin: 0px 3%;
+    padding: 50px 0px;
+}
+
+body > div.contact-cover > div.contact-base > div {
+    display: none;
+}
+
+.contact-form {
+    min-width: 80%;
+}
+
+.boss  {
+        font-size: 25px;
 }
